@@ -39,16 +39,43 @@
 
   * #### Mutually exclusive events（互斥事件）: E ∩ F = ∅
 
-### (Multi-dimensional) R.V.（多维随机变量）
+* ### (Multi-dimensional) R.V.（多维随机变量）
+  * #### discrete random variables（离散型随机变量）
+    * ##### PMF，probability mass function
+      其实就是概率分布
+
+    * ##### Bernoulli distribution (0-1分布)
+
+    * ##### Binomial distribution (二项分布)
+      𝑋~𝑏(𝑛,𝑝) or 𝑋~Bin(𝑛,𝑝)
+
+    * ##### Poisson distribution (泊松分布),
+      * 𝑋~𝜋(𝜆)
+      * λ = np（和二项分布的联系）
+
+    * ##### CDF，Cumulative Distribution Functions
+      其实就是概率的累积，最后和为一
+
+  * #### Continuous Random Variables（连续型随机变量）
+    * ##### PDF，probability density function
+      * 积分即可得到对应的CDF
+      * CDF求导即可得到对应的PDF
+      * 对于连续型随机变量来说，具体某一点的概率是0
+    
+    * ##### Uniform distribution (均匀分布)
+      𝑋~𝑈(𝑎,𝑏)
+
+    * ##### Exponential distribution (指数分布)
+      * 𝑋~exp(𝜃)
+      * θ = 1 / λ（指数分布和泊松分布的联系）
+
+
+* ### *Statistics* of R.V.（随机变量的统计量）
 
 
 
-### *Statistics* of R.V.（随机变量的统计量）
+* ### Related to *C.L.T.*
 
 
 
-### Related to *C.L.T.*
-
-
-
-### *Parameter* Estimation
+* ### *Parameter* Estimation
