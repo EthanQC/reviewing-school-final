@@ -9,13 +9,16 @@
         * **链路层、网络层和运输层，一层一道大题**
     * 没有附加题，难度应该没有作业高
     * 可以带计算器
-* 重点中的重点：**HTTP、DNS、**
+* 重点中的重点：**HTTP、DNS、UDP、TCP、**
+* 有时间就考前看一下：
+    * TCP的公平性
 * 第一章：分层、delay、各种交换、协议等
 * 第二章：TCP、UDP、HTTP、DNS，**P2P公式不用专门看**
     * **第二章没有什么计算题，应该会有一些问答题**，就是基础的原理、概念、简答
-* 第三章：socket、多路复用、SNMP不用管、checksum计算也不考、rdt主要理解原理和几个问题，具体非常细节的不会抠比如状态转移之类的、GBN和具体的算法、TCP，注意报文结构中的RSF，ACK和sequence number对应的关系，connection management，三次握手的过程的SYN和ACK（两次的问题不用管）、拥塞控制慢启动的算法、QUIC不用管、UDP
-* 第四章：longest prefix matching一定要掌握、IP addressing、子网（比如两个地址之间通信需不需要路由器）、特殊IP地址、专用地址不用专门记范围、路由转发算法一定要会，比如怎么根据转发表看下一跳，下一跳之后怎么处理，怎么计算等、DHCP、NAT是关键，一定要好好理解、如果服务器在里面，内网怎么往外网通信（需要有一个服务器来进行帮助，从内网发起，不能从外网发起，把外网IP地址告诉内网，叫做NAT的穿透）、tunneling和encapsulation理解一下就行、转发知道基本原理、OpenFlow的flow table有哪些项（field）和基本原理，不需要掌握它的计算
-* 第五章和第六章（是重点）：SDN、数据平面和控制平面、Dijkstra最短路径算法一定要掌握、distance vector algorithm（动态规划算法，Bellman-Ford，BF）算法的基本原理和计算方法、count-to-infinity problem（上课讲的，翻聊天记录）一定要好好看、域内和域间路由协议可能会考简答题、路径向量协议、BGP、ICMP、每一章每一层的service都要搞清楚、CRC一定要会算（也是之前上课讲的，翻聊天记录）、CSMA这些的基本原理和算法一定要搞清楚、binary backoff也一定要好好看、mac address（和IP address的区别之类的）、ARP和跨网络的ARP怎么进行计算一定要搞清楚，ARP和IP相结合怎么进行通信、topology、以太网、switch交换机的自学习算法一定要搞清楚、VLAN知道概念就行、RTS和CTS、MPLS掌握基础原理，转发计算不用掌握
+* 第三章：socket、多路复用、SNMP不用管、checksum计算也不考、rdt主要理解原理和几个问题，具体非常细节的不会抠比如状态转移之类的、GBN和具体的算法、**TCP，注意报文结构中的RSF，ACK和sequence number对应的关系，connection management，三次握手的过程的SYN和ACK（两次的问题不用管）**、拥塞控制慢启动的算法、QUIC不用管、UDP
+* 第四章：**longest prefix matching一定要掌握**、IP addressing、子网（比如两个地址之间通信需不需要路由器）、特殊IP地址、专用地址不用专门记范围、**路由转发算法一定要会，比如怎么根据转发表看下一跳，下一跳之后怎么处理，怎么计算等**、DHCP、**NAT是关键，一定要好好理解、如果服务器在里面，内网怎么往外网通信（需要有一个服务器来进行帮助，从内网发起，不能从外网发起，把外网IP地址告诉内网，叫做NAT的穿透）**、tunneling和encapsulation理解一下就行、转发知道基本原理、OpenFlow的flow table有哪些项（field）和基本原理，不需要掌握它的计算
+* 第五章（是重点）：SDN、数据平面和控制平面、Dijkstra最短路径算法一定要掌握、distance vector algorithm（动态规划算法，Bellman-Ford，BF）算法的基本原理和计算方法、count-to-infinity problem（上课讲的，翻聊天记录）一定要好好看、域内和域间路由协议可能会考简答题、路径向量协议、BGP、ICMP、每一章每一层的service都要搞清楚、
+第六章（是重点）：CRC一定要会算（也是之前上课讲的，翻聊天记录）、CSMA这些的基本原理和算法一定要搞清楚、binary backoff也一定要好好看、mac address（和IP address的区别之类的）、ARP和跨网络的ARP怎么进行计算一定要搞清楚，ARP和IP相结合怎么进行通信、topology、以太网、switch交换机的自学习算法一定要搞清楚、VLAN知道概念就行、RTS和CTS、MPLS掌握基础原理，转发计算不用掌握
 
 ## 知识框架
 ### 关键词缩写解释
@@ -50,9 +53,31 @@ p2p
 
 ![alt text](image-30.png)
 
+![alt text](image-78.png)
+
+![alt text](image-79.png)
+
+ACK：acknowledgement
+
+NACK：not acknowledgement
+
+![alt text](image-99.png)
+
+![alt text](image-111.png)
+
+![alt text](image-115.png)
+
+![alt text](image-119.png)
+
 ![alt text](image-38.png)
 
+![alt text](image-105.png)
+
+![alt text](image-120.png)
+
 ![alt text](image-48.png)
+
+![alt text](image-126.png)
 
 ### FAQ
 ![alt text](image-1.png)
@@ -70,6 +95,14 @@ p2p
 ![alt text](image-62.png)
 
 ![alt text](image-75.png)
+
+![alt text](image-85.png)
+
+![alt text](image-92.png)
+
+![alt text](image-113.png)
+
+![alt text](image-125.png)
 
 ### 重要知识点
 
@@ -162,7 +195,75 @@ p2p
 ![alt text](image-77.png)
 
 ### 运输层
+![alt text](image-80.png)
 
+![alt text](image-81.png)
+
+![alt text](image-82.png)
+
+![alt text](image-83.png)
+
+![alt text](image-84.png)
+
+![alt text](image-86.png)
+
+![alt text](image-87.png)
+
+![alt text](image-88.png)
+
+![alt text](image-89.png)
+
+![alt text](image-90.png)
+
+![alt text](image-91.png)
+
+![alt text](image-93.png)
+
+![alt text](image-94.png)
+
+![alt text](image-95.png)
+
+![alt text](image-96.png)
+
+![alt text](image-97.png)
+
+![alt text](image-98.png)
+
+![alt text](image-100.png)
+
+![alt text](image-101.png)
+
+![alt text](image-102.png)
+
+![alt text](image-103.png)
+![alt text](image-104.png)
+
+![alt text](image-106.png)
+![alt text](image-107.png)
+
+![alt text](image-108.png)
+
+![alt text](image-109.png)
+
+![alt text](image-110.png)
+
+![alt text](image-112.png)
+
+![alt text](image-114.png)
+
+![alt text](image-116.png)
+
+![alt text](image-117.png)
+
+![alt text](image-118.png)
+
+![alt text](image-121.png)
+
+![alt text](image-122.png)
+
+![alt text](image-123.png)
+
+![alt text](image-124.png)
 
 ### 网络层：数据平面
 
