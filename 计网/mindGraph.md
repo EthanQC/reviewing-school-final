@@ -12,13 +12,15 @@
 * 重点中的重点：**HTTP、DNS、UDP、TCP、**
 * 有时间就考前看一下：
     * TCP的公平性
+    * BGP的路径广播、传播策略（政策）、热土豆路由
+    * SDN网络框架（第五章ppt最后）
 * 第一章：分层、delay、各种交换、协议等
 * 第二章：TCP、UDP、HTTP、DNS，**P2P公式不用专门看**
     * **第二章没有什么计算题，应该会有一些问答题**，就是基础的原理、概念、简答
 * 第三章：socket、多路复用、SNMP不用管、checksum计算也不考、rdt主要理解原理和几个问题，具体非常细节的不会抠比如状态转移之类的、GBN和具体的算法、**TCP，注意报文结构中的RSF，ACK和sequence number对应的关系，connection management，三次握手的过程的SYN和ACK（两次的问题不用管）**、拥塞控制慢启动的算法、QUIC不用管、UDP
 * 第四章：**longest prefix matching一定要掌握**、IP addressing、子网（比如两个地址之间通信需不需要路由器）、特殊IP地址、专用地址不用专门记范围、**路由转发算法一定要会，比如怎么根据转发表看下一跳，下一跳之后怎么处理，怎么计算等**、DHCP、**NAT是关键，一定要好好理解、如果服务器在里面，内网怎么往外网通信（需要有一个服务器来进行帮助，从内网发起，不能从外网发起，把外网IP地址告诉内网，叫做NAT的穿透）**、tunneling和encapsulation理解一下就行、转发知道基本原理、OpenFlow的flow table有哪些项（field）和基本原理，不需要掌握它的计算
-* 第五章（是重点）：SDN、数据平面和控制平面、Dijkstra最短路径算法一定要掌握、distance vector algorithm（动态规划算法，Bellman-Ford，BF）算法的基本原理和计算方法、count-to-infinity problem（上课讲的，翻聊天记录）一定要好好看、域内和域间路由协议可能会考简答题、路径向量协议、BGP、ICMP、每一章每一层的service都要搞清楚、
-第六章（是重点）：CRC一定要会算（也是之前上课讲的，翻聊天记录）、CSMA这些的基本原理和算法一定要搞清楚、binary backoff也一定要好好看、mac address（和IP address的区别之类的）、ARP和跨网络的ARP怎么进行计算一定要搞清楚，ARP和IP相结合怎么进行通信、topology、以太网、switch交换机的自学习算法一定要搞清楚、VLAN知道概念就行、RTS和CTS、MPLS掌握基础原理，转发计算不用掌握
+* 第五章（是重点）：SDN、数据平面和控制平面、**Dijkstra最短路径算法一定要掌握**、distance vector algorithm（动态规划算法，Bellman-Ford，BF）算法的基本原理和计算方法、**count-to-infinity problem（上课讲的，翻聊天记录）一定要好好看**、域内和域间路由协议可能会考简答题、路径向量协议、BGP、ICMP、每一章每一层的service都要搞清楚
+* 第六章（是重点）：**CRC一定要会算（也是之前上课讲的，翻聊天记录）、CSMA这些的基本原理和算法一定要搞清楚、binary backoff也一定要好好看**、mac address（和IP address的区别之类的）、**ARP和跨网络的ARP怎么进行计算一定要搞清楚，ARP和IP相结合怎么进行通信**、topology、以太网、**switch交换机的自学习算法一定要搞清楚**、VLAN知道概念就行、RTS和CTS、MPLS掌握基础原理，转发计算不用掌握
 
 ## 知识框架
 ### 关键词缩写解释
@@ -77,7 +79,35 @@ NACK：not acknowledgement
 
 ![alt text](image-48.png)
 
+![alt text](image-134.png)
+
+![alt text](image-135.png)
+
+![alt text](image-136.png)
+
+![alt text](image-139.png)
+
+![alt text](image-145.png)
+
 ![alt text](image-126.png)
+
+OpenFlow
+
+![alt text](image-166.png)
+
+![alt text](image-165.png)
+
+![alt text](image-169.png)
+
+eBGP：external BGP
+
+iBGP：internal BGP
+
+![alt text](image-161.png)
+
+TTL：Time To Live
+
+
 
 ### FAQ
 ![alt text](image-1.png)
@@ -103,6 +133,25 @@ NACK：not acknowledgement
 ![alt text](image-113.png)
 
 ![alt text](image-125.png)
+
+![alt text](image-131.png)
+
+![alt text](image-142.png)
+
+![alt text](image-143.png)
+
+![alt text](image-144.png)
+
+![alt text](image-149.png)
+
+![alt text](image-151.png)
+
+![alt text](image-162.png)
+![alt text](image-163.png)
+
+![alt text](image-164.png)
+
+![alt text](image-175.png)
 
 ### 重要知识点
 
@@ -266,9 +315,60 @@ NACK：not acknowledgement
 ![alt text](image-124.png)
 
 ### 网络层：数据平面
+![alt text](image-127.png)
 
+![alt text](image-128.png)
+
+![alt text](image-129.png)
+
+![alt text](image-130.png)
+
+![alt text](image-132.png)
+
+![alt text](image-133.png)
+
+![alt text](image-137.png)
+![alt text](image-138.png)
+
+![alt text](image-140.png)
+
+![alt text](image-141.png)
+
+![alt text](image-146.png)
+
+![alt text](image-147.png)
+
+![alt text](image-148.png)
+
+![alt text](image-150.png)
 
 ### 网络层：控制平面
+![alt text](image-152.png)
+![alt text](image-153.png)
+![alt text](image-154.png)
+![alt text](image-155.png)
+![alt text](image-156.png)
+
+![alt text](image-157.png)
+![alt text](image-158.png)
+![alt text](image-159.png)
+
+![alt text](image-160.png)
+
+![alt text](image-167.png)
+
+![alt text](image-168.png)
+
+![alt text](image-170.png)
+
+![alt text](image-171.png)
+
+![alt text](image-172.png)
+
+![alt text](image-173.png)
+
+![alt text](image-174.png)
+
 
 
 ### 链路层
