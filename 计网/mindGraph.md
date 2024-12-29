@@ -10,10 +10,13 @@
     * 没有附加题，难度应该没有作业高
     * 可以带计算器
 * 重点中的重点：**HTTP、DNS、UDP、TCP、**
-* 有时间就考前看一下：
+* 有时间就考前看一下（可能不是重点）：
     * TCP的公平性
     * BGP的路径广播、传播策略（政策）、热土豆路由
     * SDN网络框架（第五章ppt最后）
+    * Slotted ALOHA和pure ALOHA
+    * “Taking turns” MAC protocols和Cable access network
+    * **将所有层和所有协议串起来、总结思维导图**（第六章ppt最后）（**重点，用来加深理解和记忆**）
 * 第一章：分层、delay、各种交换、协议等
 * 第二章：TCP、UDP、HTTP、DNS，**P2P公式不用专门看**
     * **第二章没有什么计算题，应该会有一些问答题**，就是基础的原理、概念、简答
@@ -107,7 +110,34 @@ iBGP：internal BGP
 
 TTL：Time To Live
 
+![alt text](image-205.png)
 
+![alt text](image-182.png)
+
+MAC 地址（Media Access Control Address）
+![alt text](image-184.png)
+
+![alt text](image-186.png)
+
+![alt text](image-187.png)
+
+ALOHA
+
+![alt text](image-189.png)
+
+![alt text](image-190.png)
+
+![alt text](image-191.png)
+
+![alt text](image-210.png)
+
+![alt text](image-219.png)
+
+![alt text](image-206.png)
+
+![alt text](image-218.png)
+
+![alt text](image-222.png)
 
 ### FAQ
 ![alt text](image-1.png)
@@ -153,6 +183,20 @@ TTL：Time To Live
 
 ![alt text](image-175.png)
 
+![alt text](image-177.png)
+
+![alt text](image-201.png)
+
+![alt text](image-200.png)
+
+![alt text](image-207.png)
+
+![alt text](image-214.png)
+
+![alt text](image-215.png)
+
+![alt text](image-221.png)
+
 ### 重要知识点
 
 ![alt text](image-2.png)
@@ -181,6 +225,8 @@ TTL：Time To Live
 ![alt text](image-28.png)
 
 ![alt text](image-29.png)
+
+![alt text](image-216.png)
 
 ### 应用层
 ![alt text](image-24.png)
@@ -369,9 +415,58 @@ TTL：Time To Live
 
 ![alt text](image-174.png)
 
-
-
 ### 链路层
+![alt text](image-176.png)
+![alt text](image-178.png)
 
+![alt text](image-179.png)
 
-### 物理层
+![alt text](image-180.png)
+![alt text](image-181.png)
+
+![alt text](image-183.png)
+
+![alt text](image-185.png)
+
+![alt text](image-188.png)
+
+![alt text](image-192.png)
+
+![alt text](image-193.png)
+
+![alt text](image-194.png)
+
+![alt text](image-195.png)
+
+![alt text](image-196.png)
+
+![alt text](image-197.png)
+![alt text](image-198.png)
+![alt text](image-199.png)
+
+![alt text](image-202.png)
+![alt text](image-203.png)
+
+![alt text](image-204.png)
+
+![alt text](image-209.png)
+
+![alt text](image-211.png)
+
+![alt text](image-212.png)
+
+![alt text](image-213.png)
+
+![alt text](image-217.png)
+
+![alt text](image-220.png)
+
+![alt text](image-223.png)
+
+![alt text](image-224.png)
+
+![alt text](image-225.png)
+
+![alt text](image-226.png)
+![alt text](image-227.png)
+![alt text](image-228.png)
